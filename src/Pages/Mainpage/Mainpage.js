@@ -40,6 +40,7 @@ export function Mainpage(){
    if(data.length===1){
     return (<div>
         <form onSubmit={handleAge}>
+            <label style={{display:"block"}}>Your Age</label>
             <input id="age" required name="age" type="number"/>
             <button type="submit">Submit</button>
         </form>
