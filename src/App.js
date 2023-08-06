@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React,{createContext,useState,useEffect} from 'react';
+import { Mainpage } from './Pages/Mainpage/Mainpage';
+export const Context=createContext();
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>The Online Depression Level Detector</h1>
+      <h3>Keep in mind the Detector may not always be accurate</h3>
+      <Mainpage/>
     </div>
   );
 }
